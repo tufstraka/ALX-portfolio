@@ -1,0 +1,185 @@
+html {
+	height: 100%;
+	width: 100%;	
+	background: rgb(238, 174, 202);
+	background: linear-gradient(
+		30deg,
+		rgba(238, 174, 202, 1) 0%,
+		rgba(148, 187, 233, 1) 100%
+	);
+}
+
+.mission-container{
+            
+    padding: 30px;
+    margin-top: 50px;
+    
+}
+.impact-container{
+    
+    padding: 30px;
+                
+}
+
+
+img{
+max-width: 100%;
+height: auto;
+}
+
+.goals-container{
+padding: 20px;
+}
+
+
+
+body {
+display: flex;
+flex-direction: column;
+margin:0;
+}
+
+main{
+display: flex;
+flex-direction: row;
+flex: auto;
+}
+
+article{
+flex: 2;
+overflow-y: auto
+}
+aside{
+flex: 1;
+margin-top: 110px;
+overflow-y: auto
+}
+
+h1 {
+font-family: 'Lato', sans-serif;
+font-weight:300;
+letter-spacing: 2px;
+font-size:48px;
+}
+p {
+font-family: 'Lato', sans-serif;
+letter-spacing: 1px;
+font-size:14px;
+color: #333333;
+}
+footer{
+    text-align: center;
+}
+
+
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+         blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 8em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+
+.line-1{
+
+margin: 0 auto;
+border-right: 2px solid rgba(255,255,255,.75);
+text-align: center;
+white-space: nowrap;
+overflow: hidden;
+transform: translateY(-50%);    
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+blockquote.twitter-tweet {
+    display: inline-block;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 16px;
+    border-color: #eee #ddd #bbb;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    margin: 10px 5px;
+    padding: 0 16px 16px 16px;
+    max-width: 468px;
+  }
+  
+  blockquote.twitter-tweet p {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+  }
+  
+  blockquote.twitter-tweet a {
+    color: inherit;
+    font-weight: normal;
+    text-decoration: none;
+    outline: 0 none;
+  }
+  
+  blockquote.twitter-tweet a:hover,
+  blockquote.twitter-tweet a:focus {
+    text-decoration: underline;
+  }
+
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+.waves {
+height:40px;
+min-height:40px;
+}
+.content {
+height:30vh;
+}
+h1 {
+font-size:24px;
+}
+}
+@media (max-width: 400px) {
+.goals-container {
+display: flex;
+flex-direction: column;
+}
+.content {
+height:30vh;
+}
+h1 {
+font-size:24px;
+}
+}

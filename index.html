@@ -4,236 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://alx-apply.hbtn.io/level2/school.css" rel="stylesheet">
+    <script src="behavior.js"></script>.
     <title>Kadima's Vault</title>
 
-    <style>
-   
-        .mission-container{
-            
-            padding: 30px;
-            margin-top: 50px;
-            
-        }
-      
-    
-      img{
-        max-width: 100%;
-        height: auto;
-    }
-    
-    .goals-container{
-        padding: 20px;
-    }
-    
-    @import url(//fonts.googleapis.com/css?family=Lato:300:400);
-    
-    body {
-      display: flex;
-      flex-direction: column;
-      margin:0;
-    }
-
-    main{
-        display: flex;
-        flex-direction: row;
-        flex: auto;
-    }
-
-    article{
-        flex: 2;
-        overflow-y: auto
-    }
-    aside{
-        flex: 1;
-        margin-top: 110px;
-        overflow-y: auto
-    }
-    
-    h1 {
-      font-family: 'Lato', sans-serif;
-      font-weight:300;
-      letter-spacing: 2px;
-      font-size:48px;
-    }
-    p {
-      font-family: 'Lato', sans-serif;
-      letter-spacing: 1px;
-      font-size:14px;
-      color: #333333;
-    }
-    
-    .header {
-      position:relative;
-      text-align:center;
-      background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
-      color:white;
-    }
-    .logo {
-      width:50px;
-      fill:white;
-      padding-right:15px;
-      display:inline-block;
-      vertical-align: middle;
-    }
-    
-    .inner-header {
-      height:65vh;
-      width:100%;
-      margin: 0;
-      padding: 0;
-    }
-    
-    .flex { /*Flexbox for containers*/
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .waves {
-      position:relative;
-      width: 100%;
-      height:15vh;
-      margin-bottom:-7px; /*Fix for safari gap*/
-      min-height:100px;
-      max-height:150px;
-    }
-    
-    .content {
-      position:relative;
-      height:20vh;
-      text-align:center;
-      background-color: white;
-    }
-    
-    /* Animation */
-    
-    .parallax > use {
-      animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-    }
-    .parallax > use:nth-child(1) {
-      animation-delay: -2s;
-      animation-duration: 7s;
-    }
-    .parallax > use:nth-child(2) {
-      animation-delay: -3s;
-      animation-duration: 10s;
-    }
-    .parallax > use:nth-child(3) {
-      animation-delay: -4s;
-      animation-duration: 13s;
-    }
-    .parallax > use:nth-child(4) {
-      animation-delay: -5s;
-      animation-duration: 20s;
-    }
-    @keyframes move-forever {
-      0% {
-       transform: translate3d(-90px,0,0);
-      }
-      100% { 
-        transform: translate3d(85px,0,0);
-      }
-    }
-    .anim-typewriter{
-      animation: typewriter 4s steps(44) 1s 1 normal both,
-                 blinkTextCursor 500ms steps(44) infinite normal;
-    }
-    @keyframes typewriter{
-      from{width: 0;}
-      to{width: 8em;}
-    }
-    @keyframes blinkTextCursor{
-      from{border-right-color: rgba(255,255,255,.75);}
-      to{border-right-color: transparent;}
-    }
-    
-    .line-1{
-        
-        margin: 0 auto;
-        border-right: 2px solid rgba(255,255,255,.75);
-        text-align: center;
-        white-space: nowrap;
-        overflow: hidden;
-        transform: translateY(-50%);    
-    }
-    
-    
-    /*Shrinking for mobile*/
-    @media (max-width: 768px) {
-      .waves {
-        height:40px;
-        min-height:40px;
-      }
-      .content {
-        height:30vh;
-      }
-      h1 {
-        font-size:24px;
-      }
-    }
-    @media (max-width: 400px) {
-      .goals-container {
-        display: flex;
-        flex-direction: column;
-      }
-      .content {
-        height:30vh;
-      }
-      h1 {
-        font-size:24px;
-      }
-    }
-    </style>
 </head>
 
 <body class="works_on_smartphone">
 
     <header class="header">
 
-        <!--Content before waves-->
-        <div class="inner-header flex">
-        
-        <h1 class='line-1 anim-typewriter'>Hello stranger,</h1>
+        <div class="topnav">
+          <div class="right">
+            <a href="https://linkedin.com/in/kadimakeith" target='_blank'><img style='width:25px; height:25px' src="https://ricardoreadingmouse.com.au/wp-content/uploads/2018/04/linkedin-logo-copy.png" alt=""></a>
+            <a href="https://twitter.com/WanderingBantu"><img style='width:25px; height:25px' src='https://androidgram.com/wp-content/uploads/2021/03/twitter-logo-high-e1477757975960.jpg' alt=""></a>
+          </div>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="tweets.html">Tweets</a></li>
+            <li><a href="fun.html">Easter egg</a></li>
+          </ul>
         </div>
+
         
-        <!--Waves Container-->
-        <div>
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                </g>
-            </svg>
-        </div>
-        <!--Waves end-->
+     
+       
         
     </header>
+
+    <div style ='text-align: center;'>
+      <img class='small' id="smart_thumbnail" src="http://images.unsplash.com/photo-1547039996-61c1135690c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8Mnx8d2lkZXx8MHx8fHwxNjIzOTQ4MDMz&ixlib=rb-1.2.1&q=80&w=1080" alt="photo"
+     >
+     <p>Click this image </p>
+    </div>
+    
 
     
     <main>
         <article>
             <div class="mission-container">
-                <h1>Personal Mission</h1>
-                <p>Kadima here! I am a tech enthusiast who is focused on developing useful solutions to meet changing business and customer demands.
+              <h1>Personal Mission</h1>
+              <p>Kadima here! I am a tech enthusiast at heart. This has culminated into a profound need to understand how technology works.
+                I am very passionate about software engineering and focused on developing useful solutions to meet changing business and customer demands.
                    Always curious and has an insatiable thirst to learn new things and explore more domains. A firm believer of "Do and learn".
                    I believe ALX will act as a huge stepping stone in my career advancement due to their approach which not only focuses on technical skills
-                   but also the soft skills</p>
+                   but also the soft skills
+              </p>
+            </div>
+
+            <div class="goals-container" style='padding: 30px' >
+              <h2>Goals</h2>
+              <ul>
+                <li>To be highly skilled in several tech stacks.</li>
+                <li>To improve my soft skills.( communication, teamwork etc)</li>
+                <li>To increase my network.</li>
+                <li>To improve my professional skills.</li>
+                <li>To improve my problem solving skills.</li>
+              </ul>
+
             </div>
 
             <div class="impact-container">
-
+              <h2>Commmunity</h2>
+              <h3>How i'll make an impact to the community</h3>
+              <p>Mentor and guide people interested in software engineering in the community.</p>
+              <p>Volunteer in solving technical problems.</p>
+              <p>Volunteer in making websites for some local businesses to increase their digital presence</p>
             </div>
-            <div class="venture-container">
+
+            <div class="venture-container" style='padding:30px'>
+              <h2>Venture</h2>
+              <p>I made a website for a tours and travel company called Madrone. It can be accessed by clicking <a href="http://www.madronetravel.co.ke" target='_blank'>here</a>
+                 </p>
         
 
             </div>
+
+           
         </article>
         <aside>
             <div id="disqus_thread"></div>
@@ -254,12 +102,19 @@
                     (d.head || d.body).appendChild(s);
                     })();
             </script>
+            <br>
+
+            <p> Click &#8669; <a href="tweets.html">here</a> to check out some of my tweets.</p>
+            <br>
+            <p> Click ➾ <a href="fun.html">here</a> to see something cool.</p>
         </aside>
+
+        
         
 
     </main>
 
-       
+         
 
     <footer>
         <p>Made by Keith Kadima for <a href="https://alx-apply.hbtn.io" target="_blank">ALX</a>.</p>
